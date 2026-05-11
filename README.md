@@ -1,4 +1,4 @@
-# 🤖 AjayDataLabs – AI-Based PDF Intelligence System  
+AI-Based PDF Intelligence System  
 **(College Project – Individual Contribution)**
 
 ---
