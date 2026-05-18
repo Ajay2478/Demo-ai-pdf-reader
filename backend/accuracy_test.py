@@ -19,7 +19,7 @@ GOOGLE_KEY = os.getenv("GOOGLE_API_KEY")
 GROQ_KEY = os.getenv("GROQ_API_KEY")
 
 if not GOOGLE_KEY or not GROQ_KEY:
-    print("❌ API keys missing")
+    print(" API keys missing")
     exit()
 
 
@@ -28,7 +28,7 @@ if not GOOGLE_KEY or not GROQ_KEY:
 # =============================
 DB_PATH = "vectorstore/db_faiss"
 
-print("📂 Loading Vector DB...")
+print("Loading Vector DB...")
 
 embeddings = GoogleGenerativeAIEmbeddings(
     model="models/text-embedding-004",
@@ -128,7 +128,7 @@ test_cases = [
 # =============================
 def run_test():
 
-    print("\n🧪 Running Accuracy Test on RBI AI.pdf\n")
+    print("\n Running Accuracy Test on RBI AI.pdf\n")
 
     correct = 0
 
@@ -142,15 +142,15 @@ def run_test():
         print("Expected:", case["expected"])
 
         if case["expected"].lower() in answer.lower():
-            print("✅ Correct\n")
+            print("Correct\n")
             correct += 1
         else:
-            print("❌ Wrong\n")
+            print("Wrong\n")
 
     accuracy = (correct / len(test_cases)) * 100
 
     print("=" * 50)
-    print(f"📊 Accuracy: {accuracy:.2f}%")
+    print(f"Accuracy: {accuracy:.2f}%")
     print("=" * 50)
 
 
