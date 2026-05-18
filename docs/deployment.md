@@ -8,7 +8,7 @@ Frontend and backend are deployed separately.
 
 ---
 
-## Backend Deployment (Railway / Render)
+## Backend Deployment (Railway)
 
 ### Steps
 1. Create project on platform
